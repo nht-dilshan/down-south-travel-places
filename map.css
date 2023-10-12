@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h3 {
+ 
+    padding-bottom: 0;
+    font-size:40px;
+    padding: 10px 35px;
+    font-weight: 500;
+}

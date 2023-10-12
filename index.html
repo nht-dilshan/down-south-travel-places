@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">Travel in the Sri Lanka</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+            <a href="Home.html">Home</a>
+
+            <a href="Gallery.html">Gallery</a>
+
+           
+
+            <a href="Write.html">Write Us</a>
+
+            <a href="places.html">Places</a>
+            <a href="Map.html">Map</a>
+            <a href="todo.html">To Do List</a>
+
+
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="5.mp4" autoplay muted loop></video>
+      
+      <div class="content active">
+        <h1>Road Trip.<br><span>Together</span></h1>
+        <p>If you like road trips,<u>Sri Lanka </u>is the perfect kind of island for you. We don’t recommend you rent a car yourself because the main rule of the road is to not follow any rules! You are better off hiring a driver with a comfy van. The roads might not be quite what you are used to back home but it is not hard to get around. Here are five road trips you can do in <u>Sri Lanka.</u></p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Hiking.<br><span>Enjoy</span></h1>
+        <p><u>Sri Lanka </u>is a special hiking destination. There are trails for all sorts of experience levels, from easy walks to more intense treks. The country also has more than 400 waterfalls, a visit to which is included in plenty of hikes. Got your walking boots laced, camera packed and sunscreen on? Here are the best hiking and trekking trails in Sri Lanka.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Adventures.<br><span>Off Road</span></h1>
+        <p>What is hard adventure tourism?
+          Hard Adventure
+          
+          Hard tourism includes the activities like climbing mountains/rock/ice, trekking, caving, etc. Hard adventure activities are highly risked in nature. Professional guides and advanced levels of skills are required to perform these activities. Many tourists died during climbing mountains, caving every day.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Pearl.<br><span>Of the Indian Ocean</span></h1>
+        <p>Sri Lanka is often referred to as<b>“the pearl of the Indian Ocean.”</b> No wonder, considering the fact that there is a great deal to discover on this tropical island with around 21 million inhabitants: Dream beaches, cultural treasures, rich biodiversity, and hearty cooking..</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="content">
+        <h1>Feel Nature.<br><span>Free</span></h1>
+        <p>Sri Lanka is a beautiful, exotic destination full of culture, nature, wildlife, and smiling faces. For a country with such a violent (and recently so, at that) history, the island is actually home to some of the friendliest people out there</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>

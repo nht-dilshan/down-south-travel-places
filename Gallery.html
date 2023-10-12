@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Travelling Gallery</h2>
+  
+</div>
+
+<div class="row">
+  <div class="column">
+      <img src="mirissa.jpeg" alt="Mirissa" style="width:100%" onclick="myFunction(this);">
+    </div>
+  <div class="column">
+    <img src="mn.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="fall.jpeg" alt="waterfall" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="ninearch.jpeg" alt="The Nine Arch Bridge" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="temple.jpeg" alt="Buddhist temple" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="sigiriya.jpeg" alt="World Heritage Site" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Rice.jpeg" alt="Rice" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="forest.jpeg" alt="forest" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="woods.jpg" alt="woods" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="rocks.jpg" alt="rocks" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="food.jpeg" alt="food" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="animals.jpeg" alt="Animals" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="food2.jpg" alt="foods" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="ayurvedic.jpg" alt="Traditional Ayurveda " style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="cc.jpeg" alt="coconut trees" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="fruit.jpeg" alt="fresh fruit" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Water sports.jpeg" alt="Water sports" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="colombo.jpeg" alt="Colombo City" style="width:100%" onclick="myFunction(this);">
+  </div>
+    
+  <div class="column">
+    <img src="fish.jpeg" alt="Fish Market" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="elephant.jpeg" alt="Sri Lankan elephants" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img src="sunset.jpg" alt="Beautiful sunset" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img src="maligawa.jpg" alt="Daladha Maligawa" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img src="tissamaharama.jpg" alt="Daladha Maligawa" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img src="Weherahena Temple.jpg" alt="Daladha Maligawa" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
+
+</body>
+</html>

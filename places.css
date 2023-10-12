@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#body5{
+    background-color: rgb(16, 16, 24);
+    width: 1500px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    margin: 10px 10px 10px 10px;
+}
+
+
+
+#logo{
+    width: 150px;
+    height: 125px;
+    margin: 10px 10px 10px 10px;
+    align-items:left;
+	
+}
+#mw{
+    color: rgb(133, 114, 11);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width: 100%;
+	min-height: 2500px;
+	background-color: rgb(215, 224, 230);
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 90%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#f10bcb;
+	font-size: 45px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	
+}
